@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/User-Management-Table/static/css/main.d8cee8c7.css",
+    "main.js": "/User-Management-Table/static/js/main.3c45bf60.js",
+    "static/js/453.fa028417.chunk.js": "/User-Management-Table/static/js/453.fa028417.chunk.js",
+    "index.html": "/User-Management-Table/index.html",
+    "main.d8cee8c7.css.map": "/User-Management-Table/static/css/main.d8cee8c7.css.map",
+    "main.3c45bf60.js.map": "/User-Management-Table/static/js/main.3c45bf60.js.map",
+    "453.fa028417.chunk.js.map": "/User-Management-Table/static/js/453.fa028417.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8cee8c7.css",
+    "static/js/main.3c45bf60.js"
+  ]
+}
