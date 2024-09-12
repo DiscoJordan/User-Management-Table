@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+Approach:
+Project Setup: I initialized the project using React, TypeScript, and Redux Toolkit. This provided strong type safety and a streamlined way to manage the application state. I used createSlice to handle the user data and filter logic in Redux.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Fetching Users: I utilized the GET /users endpoint from JSONPlaceholder to fetch user data and stored it in the Redux state. This data was displayed in a table with relevant columns like name, username, email, and phone.
 
-## Available Scripts
+Filtering Functionality: I implemented local filtering by adding input fields for each column (name, username, email, phone) and dynamically updating the filtered data as the user typed. The filter logic leveraged Redux to store the current filters and applied the filter dynamically to the user list.
 
-In the project directory, you can run:
+TypeScript for Type Safety: TypeScript was applied throughout the project to ensure strong typing, from defining the shape of the user data to enforcing types for Redux actions and state. This reduced the risk of runtime errors and helped with auto-completion in the IDE.
 
-### `npm start`
+Styling: I kept the UI minimalistic, using clean and simple styles for the table and inputs, ensuring a user-friendly and functional design.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Challenges:
+Redux Filter Logic: One challenge was designing a flexible filter mechanism that works for multiple columns at once. I overcame this by dynamically applying the filters using Object.entries to loop over all active filters and comparing the user data with filter inputs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Type Safety with Dynamic Filters: Handling dynamic keys for the filter logic while maintaining TypeScript's type safety required careful casting (key as keyof User) to ensure the types were respected without losing flexibility.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Overall, the approach successfully balanced functionality, type safety, and simplicity.
