@@ -10,8 +10,7 @@ TypeScript for Type Safety: TypeScript was applied throughout the project to ens
 Styling: I kept the UI minimalistic, using clean and simple styles for the table and inputs, ensuring a user-friendly and functional design.
 
 Challenges:
-Redux Filter Logic: One challenge was designing a flexible filter mechanism that works for multiple columns at once. I overcame this by dynamically applying the filters using Object.entries to loop over all active filters and comparing the user data with filter inputs.
-
-Type Safety with Dynamic Filters: Handling dynamic keys for the filter logic while maintaining TypeScript's type safety required careful casting (key as keyof User) to ensure the types were respected without losing flexibility.
+Complex filtering logic: Creating a dynamic filtering mechanism that updated in real-time for multiple columns required careful handling of state and filtering conditions.
+TypeScript with dynamic keys: Ensuring type safety while filtering based on dynamic keys posed a challenge, but TypeScript casting and structured logic helped solve it.
 
 Overall, the approach successfully balanced functionality, type safety, and simplicity.
